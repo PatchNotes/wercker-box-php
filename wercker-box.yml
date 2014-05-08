@@ -1,18 +1,16 @@
 name: php55
-version: 0.0.15
-inherits: wercker/ubuntu12.04-webessentials@0.0.3
+version: 0.0.16
+inherits: wercker/ubuntu12.04-webessentials
 type: main
 platform: ubuntu@12.04
 description: wercker box for php 5.5
 keywords:
   - php
   - php5
+  - postgresql
+  - laravel
 packages:
   - php@5.5
-  - npm
-  - bower
-  - libicu-dev
-  - capifony
 script: |
   
   # Edit environment path
