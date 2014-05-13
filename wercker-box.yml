@@ -18,7 +18,7 @@ script: |
   sudo apt-get update
 
   # Install base packages
-  sudo apt-get install -y curl wget unzip ack-grep
+  sudo apt-get install -y curl wget unzip ack-grep git
   sudo apt-get install software-properties-common
   sudo apt-get install apt-file && apt-file update
 
@@ -40,3 +40,5 @@ script: |
   sudo mv composer.phar /usr/local/bin/composer
 
   sudo composer self-update
+
+  composer global require 'phpunit/phpunit=4.2.*'
