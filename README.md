@@ -1,7 +1,9 @@
 # PHP55
 
 PHP 5.5 wercker box.
-With pgsql installed
+Works with Laravel and PostgreSQL.
 
 ## Installed packages
 * composer
+* phpunit
+* php5-pgsql
