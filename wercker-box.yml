@@ -44,6 +44,6 @@ script: |
   # sudo composer global require "phpunit/phpunit:4.0.*"
 
   # PHP Unit
-  wget https://phar.phpunit.de/phpunit.phar
-  chmod +x phpunit.phar
-  mv phpunit.phar /usr/local/bin/phpunit
+  sudo wget https://phar.phpunit.de/phpunit.phar
+  sudo chmod +x phpunit.phar
+  sudo mv phpunit.phar /usr/local/bin/phpunit
