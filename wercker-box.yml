@@ -1,5 +1,5 @@
 name: php55
-version: 0.0.20
+version: 0.0.21
 inherits: ruudk/ubuntu14.04@1.0.0
 type: main
 platform: ubuntu@14.04
@@ -41,4 +41,9 @@ script: |
 
   sudo composer self-update
 
-  sudo composer global require "phpunit/phpunit:4.0.*"
+  # sudo composer global require "phpunit/phpunit:4.0.*"
+
+  # PHP Unit
+  wget https://phar.phpunit.de/phpunit.phar
+  chmod +x phpunit.phar
+  mv phpunit.phar /usr/local/bin/phpunit
