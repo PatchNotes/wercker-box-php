@@ -1,5 +1,5 @@
 name: php55
-version: 0.0.21
+version: 0.0.1
 inherits: ruudk/ubuntu14.04@1.0.0
 type: main
 platform: ubuntu@14.04
@@ -19,10 +19,13 @@ script: |
 
   # Install base packages
   sudo apt-get install -y curl wget unzip ack-grep git
-  sudo apt-get install software-properties-common
+  sudo apt-get install software-properties-common build-essential
   sudo apt-get install apt-file && apt-file update
 
   sudo apt-get update
+  
+  curl -sL https://deb.nodesource.com/setup | sudo bash -
+  sudo apt-get install -y nodejs
 
   # Edit environment path
   echo 'export PATH="/usr/local/bin:$PATH"' >> $HOME/.bash_profile
